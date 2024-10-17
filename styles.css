@@ -1,0 +1,56 @@
+body {
+    font-family:  Geneva, Helvetica;
+    background-image: url('https://www.salesassessmenttesting.com/wp-content/uploads/top-7-sales-personality-assessments-explained.jpeg');
+    background-size: cover;         /* Ensures the background covers the whole screen */
+    background-position: center;    /* Centers the image */
+    background-repeat: no-repeat;   /* Prevents repetition */
+    background-color: rgba(0, 0, 0, 0.5);  /* Fallback color */
+    background-blend-mode: darken;  /* Darkens the image to improve readability */
+    color: white;
+    min-height: 100vh;              /* Ensures full-screen coverage */
+}
+
+
+#quiz-container {
+    background-color: rgba(203, 222, 241, 0.7) !important; /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    color: #333;
+    text-align: center;
+    max-width: 600px;
+    margin: auto; 
+}
+
+button {
+    display: block;
+    width: 100%; /* Make buttons take full width on smaller screens */
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fab3d6;
+    color: rgb(82, 55, 55);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+h2, p {
+    color: #333;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Apply fade-in to result display */
+#quiz-container.fade-in {
+    animation: fadeIn 2s ease-in-out;
+} 
